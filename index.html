@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Utilisateur</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenue, Utilisateur</h1>
+    <div class="filters">
+      <label>Aéroport :
+        <select id="aeroport-select" onchange="updateResult()">
+          <option value="">-- Sélectionner --</option>
+          <option value="Paris">Paris</option>
+          <option value="New York">New York</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Berlin">Berlin</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Rome">Rome</option>
+          <option value="London">London</option>
+          <option value="Beijing">Beijing</option>
+          <option value="Dubai">Dubai</option>
+        </select>
+      </label>
+      <label>Météo :
+        <select id="meteo-select" onchange="updateResult()">
+          <option>Ensoleillé</option>
+          <option>Pluvieux</option>
+        </select>
+      </label>
+    </div>
+    <div class="result">
+      <p id="route">Route : </p>
+      <p id="conso">Consommation : </p>
+    </div>
+    <button onclick="logout()">Déconnexion</button>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>

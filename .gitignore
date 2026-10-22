@@ -1,0 +1,5 @@
+venv/ 
+.venv/ 
+*.parquet 
+*.mp4 
+*.zip 

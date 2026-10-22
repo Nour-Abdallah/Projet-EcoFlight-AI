@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestion des utilisateurs (CRUD)</h1>
+
+    <form id="userForm">
+      <input type="text" id="newUsername" placeholder="Nom d'utilisateur" required>
+      <select id="newRole">
+        <option value="user">Utilisateur</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Rôle</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+
+    <button onclick="logout()">Déconnexion</button>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>
